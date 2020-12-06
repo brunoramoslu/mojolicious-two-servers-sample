@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="refresh" content="10">
+    <title><%= $title %></title>
+    <style type="text/css">
+        * {
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 13px;
+            font-family: verdana;
+        }
+
+        a {
+            color: #ffe5bc;
+            font-size: 12px;
+            font-family: Arial;
+            font-weight: bold;
+        }
+
+        a:visited {
+            color: #dfc29c;
+            font-size: 12px;
+            font-family: Arial;
+            font-weight: bold;
+        }
+
+        a:link {
+            color: #dfc29c;
+            font-size: 12px;
+            font-family: Arial;
+            font-weight: bold;
+        }
+
+        a:active {
+            color: #dfc29c;
+            font-size: 12px;
+            font-family: Arial;
+            font-weight: bold;
+        }
+
+        a:hover {
+            color: #ffe5bc;
+            font-size: 12px;
+            font-family: Arial;
+            font-weight: bold;
+        }
+
+        body {
+            background-color: #474747;
+            text-decoration: none;
+            font-family: verdana;
+            font-size: 13px;
+        }
+    </style>
+</head>
+<body>
+<%= content %>
+</body>
+</html>

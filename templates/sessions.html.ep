@@ -1,0 +1,10 @@
+% layout 'mylayout', title => 'Sessions';
+<center>This page is updated every 30 seconds.</center>
+<br>
+<br>
+<b>Sessions:</b>
+<br>
+<% for my $id (keys %$sessions) { %>
+<span><%= $id %></span>
+<% } %>
+<br>

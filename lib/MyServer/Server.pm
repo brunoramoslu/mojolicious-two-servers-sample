@@ -125,7 +125,7 @@ sub run($self) {
     $log->debug("PATH after custom path append: " . join(" | ", @{$app->renderer->paths}));
 
     $app->routes->get('/' => sub($c) {
-        $c->render(json => { sessions => $sessions });
+        $c->render(template => 'sessions', sessions => $sessions);
     });
 
     my $daemon = Mojo::Server::Daemon->new(app => $app)->listen([ 'http://127.0.0.1:3001' ])->start;
